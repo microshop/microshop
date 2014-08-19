@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="Description" content="拍拍网-京东旗下购物网站" />
+    <meta name="Keywords" content="" />
+    <title>弹窗demo-店铺活动-拍拍网</title>
+    <link rel="stylesheet" tsname="gb" href="http://static.paipaiimg.com/fd/paipai/base/css/gb_v2.css?t=20140808161006" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://static.paipaiimg.com/fd/wechat/shop/admin/css/wshop_fit.css">
+</head>
+
+<body class="p_mini">
+    <!-- 这里插入拍拍头部页面片，插入后此注释请删除 -->
+
+
+    <!-- S 个人中心导航 -->
+    <div class="mc_role_nav">
+        <ul id="headTabBlock">
+            <li><a href="http://my.paipai.com/myppindex/buyer?PTAG=1015.33.1">我是买家</a>
+            </li>
+            <li class="current"><a href="http://my.paipai.com/myppindex/seller?PTAG=1015.33.4">我是卖家</a>
+            </li>
+            <li><a id="headTabAccountLink" href="http://my.paipai.com/cgi-bin/accountsecurity/entry?PTAG=1015.33.5">账户管理</a>
+            </li>
+        </ul>
+    </div>
+    <!-- E 个人中心导航 -->
+    <!-- S 面包屑 -->
+    <div class="mc_breadCrumb">
+        <p><a href="#">拍拍首页</a> &gt; <a href="#">我的拍拍</a> &gt; 微店装修</p>
+    </div>
+    <!-- E 面包屑 -->
+    <!-- S 个人中心主体 -->
+    <div class="mc_body">
+        <div class="wsf wsf_index clear">
+            <!-- S 微店装修侧栏 -->
+            <div class="wsf_sidebar">
+                <h2 class="wsf_nav_title">微店装修</h2>
+                <ul class="wsf_nav_list">
+                    <li class="wsf_nav_item "><a href="#">店铺首页</a>
+                    </li>
+                    <li class="wsf_nav_item current"><a href="#">店铺活动页</a>
+                    </li>
+                </ul>
+                <h2 class="wsf_nav_title">微店管理</h2>
+                 <ul class="wsf_nav_list">
+                    <li class="wsf_nav_item"><a href="#">我的微店信息</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- E 微店装修侧栏 -->
+
+            <!-- S 微店装修内容 -->
+            <div class="wsf_content">
+                <div class="clear wsf_main">
+                    <div class="wsf_mobile viewport">
+                        <!-- <div class="wsf_mobile_bar">
+							<h3>兰若水官方旗舰店</h3>
+						</div> -->
+                    </div>
+                    <div class="wsf_modify">
+                        <div class="wsf_modify_hd">
+                            <h3 class="wsf_modify_hd_tit">商品列表</h3>
+                        </div>
+                        <div class="wsf_modify_bd">
+                            <table class="wsf_modify_table">
+                                <tr>
+                                    <td class="wsf_modify_name">
+                                        <label for="promot-name"><i class="wsf_modify_im"></i>活动名称：</label>
+                                    </td>
+                                    <td class="wsf_modify_cnt">
+                                        <input type="text" id="promot-name" class="wsf_modify_text" size="30">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wsf_modify_name"><i class="wsf_modify_im"></i>布局结构：</td>
+                                    <td class="wsf_modify_cnt">
+                                        <input type="radio" name="style" id="style-one"><label for="style-one">列表（每行1个）</label>&nbsp;&nbsp;
+                                        <input type="radio" name="style" id="style-two"><label for="style-two">田字格（每行2个）</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="wsf_modify_name"><i class="wsf_modify_im"></i>行数：</td>
+                                    <td class="wsf_modify_cnt">
+                                        <select name="" id="" class="wsf_modify_select">
+                                            <option value="">3</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wsf_modify_name"><i class="wsf_modify_im">*</i> 商品：</td>
+                                    <td class="wsf_modify_cnt"><a href="#">修改图片</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wsf_modify_name"><i class="wsf_modify_im"></i>其他选项：</td>
+                                    <td class="wsf_modify_cnt">
+                                        <input type="checkbox" id="show-go-top"><label for="show-go-top">显示“返回顶部”按钮</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="wsf_run clear">
+                    <div class="wsf_run_l">
+                        <button class="wsf_btn wsf_btn1  wsf_run_again">重新装修</button>
+                    </div>
+                    <div class="wsf_run_r">
+                        <button class="wsf_btn wsf_btn1 wsf_run_save">保存草稿</button>&nbsp;&nbsp;
+                        <button class="wsf_btn wsf_btn2 wsf_run_publish">发布店铺</button>
+                    </div>
+                </div>
+            </div>
+            <!-- E 微店装修内容 -->
+
+        </div>
+    </div>
+    <!-- E 个人中心主体 -->
+
+
+    <!-- S 弹窗 -->
+    <div class="wsf_mask"></div>
+    <div class="wsf_dialog" style="position:fixed; top:50%; left:50%; background:#fff; border:solid 1px #ccc; margin:-144px 0 0 -254px; width:508px;">
+        <a class="wsf_dialog_close" href="##"></a>
+        <div class="wsf_dialog_hd">
+            <h3 class="wsf_dialog_hd_tit">确认</h3>
+        </div>
+        <div class="wsf_dialog_bd">
+            <div class="wsf_dialog_confirm">“发布店铺”将覆盖您当前的页面装修，是否继续？</div>
+        </div>
+        <div class="wsf_dialog_ft clear">
+            <div class="wsf_dialog_ft_l"><input type="checkbox" id="dialog-no-tip"><label for="dialog-no-tip">不再提醒</label></div>
+            <div class="wsf_dialog_ft_r">
+                <button class="wsf_btn wsf_btn3  wsf_dialog_btn_cancel">取消</button>
+                <button class="wsf_btn wsf_btn2  wsf_dialog_btn_confirm">确定</button>
+            </div>
+        </div>
+    </div>
+    <!-- E 弹窗 -->
+
+
+    <!-- 这里插入拍拍尾部页面片，插入后此注释请删除  -->
+
+
+</body>
+
+</html>
